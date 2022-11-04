@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Act 3</title>
+</head>
+<body>
+    <script>
+        //Encapsulation
+
+        class myMouse {
+            constructor()
+            {
+                var brand;
+                var model;
+                var variant;
+                
+            }
+
+            getBrand()
+            {
+                return this.brand;
+            }
+            setBrand(brand)
+            {
+                this.brand=brand;
+            }
+            getModel()
+            {
+                return this.model;
+            }
+            setModel(model)
+            {
+                this.model=model;
+            }
+            getVariant()
+            {
+                return this.variant;
+            }
+            setVariant(variant)
+            {
+                this.variant=variant;
+            }
+        }
+
+        var Mouse = new myMouse ();
+        Mouse.setBrand("Rakk");
+        Mouse.setModel("Talan");
+        Mouse.setVariant("White");
+        
+
+        alert(Mouse.getBrand() +  " " + Mouse.getModel() + " " + Mouse.getVariant());
+    </script>
+    
+</body>
+</html>
